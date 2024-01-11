@@ -19,6 +19,8 @@ type TestingT interface {
 	SkipNow()
 	Skipf(format string, args ...interface{})
 	Helper()
+
+	Name() string
 }
 
 // rapidT is a wrapper around `*rapid.T` that stubs missing `TestingT`
